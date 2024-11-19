@@ -21,7 +21,7 @@ class CustomCategoryEmoje extends StatelessWidget {
             style: const TextStyle(fontSize: 25),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(
