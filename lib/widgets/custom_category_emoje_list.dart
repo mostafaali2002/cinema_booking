@@ -11,7 +11,7 @@ class CustomCategoryEmojeList extends StatelessWidget {
       const CategoryModel(categoryName: "Comedy", categoryEmoje: "😂"),
       const CategoryModel(categoryName: "Romancy", categoryEmoje: "😍"),
       const CategoryModel(categoryName: "Drama", categoryEmoje: "😊"),
-      const CategoryModel(categoryName: "Honor", categoryEmoje: "😱"),
+      const CategoryModel(categoryName: "Horror", categoryEmoje: "😱"),
     ];
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,

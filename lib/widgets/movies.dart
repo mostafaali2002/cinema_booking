@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cinema_booking/models/movies.dart';
+import 'package:cinema_booking/widgets/custom_moves.dart';
 import 'package:flutter/material.dart';
 
 class Movies extends StatefulWidget {
@@ -27,6 +28,11 @@ class _MoviesState extends State<Movies> {
     super.initState();
   }
 
+  void dspose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -48,28 +54,11 @@ class _MoviesState extends State<Movies> {
                 5;
             angle = angle.clamp(-5, 5);
             final moves = items[index % items.length];
-            return GestureDetector(
-              onTap: () {},
-              child: Padding(
-                padding: EdgeInsets.only(top: 100 - (scale / 1.6 * 100)),
-                child: Stack(
-                  alignment: Alignment.topCenter,
-                  children: [
-                    Transform.rotate(
-                      angle: angle * pi / 90,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: Image.network(
-                          moves.poster,
-                          height: 300,
-                          width: 205,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
+            return CustomMovies(
+              scale: scale,
+              angle: angle,
+              moves: moves,
+              currentIndex: currentIndex,
             );
           },
         )

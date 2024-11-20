@@ -20,6 +20,9 @@ class CinemaHomeBody extends StatelessWidget {
         CustomCategory(),
         SizedBox(height: 30),
         ShowingHeader(),
+        SizedBox(
+          height: 16,
+        ),
         Movies()
       ],
     );
