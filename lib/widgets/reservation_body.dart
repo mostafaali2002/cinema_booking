@@ -1,5 +1,4 @@
 import 'package:cinema_booking/widgets/date_of_move.dart';
-import 'package:cinema_booking/widgets/reserved_tickets.dart';
 import 'package:cinema_booking/widgets/seat_status.dart';
 import 'package:cinema_booking/widgets/selected_seats.dart';
 import 'package:cinema_booking/widgets/welcom_border.dart';
@@ -26,8 +25,6 @@ class _MyWidgetState extends State<ReservationBody> {
           SeatsStatus(),
           SizedBox(height: 35),
           DateOfMovie(),
-          SizedBox(height: 50),
-          ReservedTickets(),
         ],
       ),
     );

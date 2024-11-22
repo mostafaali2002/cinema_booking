@@ -10,9 +10,10 @@ class CustomFloatingActionReservation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.only(bottom: 20),
       decoration: const BoxDecoration(
         boxShadow: [
-          BoxShadow(blurRadius: 60, spreadRadius: 80, color: Color(0xff1c1c27))
+          BoxShadow(blurRadius: 60, spreadRadius: 60, color: Color(0xff1c1c27))
         ],
       ),
       child: Padding(
@@ -25,7 +26,7 @@ class CustomFloatingActionReservation extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const ReservationPage(),

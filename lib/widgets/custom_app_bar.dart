@@ -1,3 +1,4 @@
+import 'package:cinema_booking/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -19,19 +20,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               children: [
                 Text(
                   "Welcom Mostafa 🖐",
+                  style: TextStyle(color: Colors.white54, fontSize: 15),
                 ),
                 SizedBox(
                   height: 5,
                 ),
                 Text(
                   "Let's relax and watch a movie",
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
               ],
             ),
             Spacer(),
             CircleAvatar(
               radius: 20,
-              backgroundColor: Colors.amber,
+              backgroundColor: AppStyle.greyColor,
             )
           ],
         ),
@@ -41,5 +44,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => const Size.fromHeight(120);
+  Size get preferredSize => const Size.fromHeight(100);
 }

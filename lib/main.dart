@@ -1,4 +1,5 @@
 import 'package:cinema_booking/pages/cinema_home_page.dart';
+import 'package:cinema_booking/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class CinemaBooking extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
-      home: CinemaHomePage(),
+      home: SplashPage(),
     );
   }
 }

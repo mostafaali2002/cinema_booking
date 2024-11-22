@@ -2,13 +2,18 @@ import 'package:cinema_booking/models/seats_model.dart';
 import 'package:cinema_booking/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
-class ReservedTickets extends StatelessWidget {
+class ReservedTickets extends StatefulWidget {
   const ReservedTickets({super.key});
 
   @override
+  State<ReservedTickets> createState() => _ReservedTicketsState();
+}
+
+class _ReservedTicketsState extends State<ReservedTickets> {
+  @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
+      padding: const EdgeInsets.only(bottom: 30, right: 30, left: 30),
       child: Row(
         children: [
           Column(
@@ -28,7 +33,9 @@ class ReservedTickets extends StatelessWidget {
           const SizedBox(width: 30),
           Expanded(
               child: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+            },
             child: Container(
               height: 60,
               decoration: BoxDecoration(
