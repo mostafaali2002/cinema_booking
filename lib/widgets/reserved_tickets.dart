@@ -35,6 +35,17 @@ class _ReservedTicketsState extends State<ReservedTickets> {
               child: GestureDetector(
             onTap: () {
               Navigator.pop(context);
+
+              var snack = const SnackBar(
+                elevation: 2,
+                backgroundColor: Colors.green,
+                content: Text(
+                  "Booking has been completed successfully",
+                  style: TextStyle(color: Colors.white),
+                ),
+                duration: Duration(seconds: 4),
+              );
+              ScaffoldMessenger.of(context).showSnackBar(snack);
             },
             child: Container(
               height: 60,
