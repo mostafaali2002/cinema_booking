@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:cinema_booking/pages/cinema_home_page.dart';
+import 'package:cinema_booking/pages/login_page_view.dart';
 import 'package:cinema_booking/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,7 @@ class SplashPage extends StatelessWidget {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => const CinemaHomePage(),
+            builder: (context) => const LoginPage(),
           ));
     });
     return Scaffold(

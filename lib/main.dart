@@ -1,4 +1,3 @@
-import 'package:cinema_booking/pages/cinema_home_page.dart';
 import 'package:cinema_booking/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
