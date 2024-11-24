@@ -50,7 +50,7 @@ List<MoviesModel> items = [
           "Joker is a 2019 American psychological thriller film directed by Todd Phillips from a screenplay he co-wrote with Scott Silver. The film stars Joaquin Phoenix and is loosely based on DC Comics characters, including the Joker."),
   const MoviesModel(
       poster:
-          "https://facinema.com/wp-content/uploads/2023/06/Blue-Beetle-Poster-2.jpg",
+          "https://image.tmdb.org/t/p/original/mXLOHHc1Zeuwsl4xYKjKh2280oL.jpg",
       rating: 7.5,
       duration: "150 minutes",
       title: "Blue Beetle",
