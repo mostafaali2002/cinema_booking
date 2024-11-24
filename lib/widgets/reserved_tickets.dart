@@ -66,4 +66,11 @@ class _ReservedTicketsState extends State<ReservedTickets> {
       ),
     );
   }
+
+  int UpdateText() {
+    setState(() {
+      selectedSeats;
+    });
+    return selectedSeats.length;
+  }
 }

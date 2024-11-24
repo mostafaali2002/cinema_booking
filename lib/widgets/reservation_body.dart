@@ -1,5 +1,3 @@
-import 'package:cinema_booking/widgets/date_of_move.dart';
-import 'package:cinema_booking/widgets/seat_status.dart';
 import 'package:cinema_booking/widgets/selected_seats.dart';
 import 'package:cinema_booking/widgets/welcom_border.dart';
 import 'package:flutter/material.dart';
@@ -21,10 +19,6 @@ class _MyWidgetState extends State<ReservationBody> {
           WelcomBorder(),
           SizedBox(height: 20),
           SelectedSeats(),
-          SizedBox(height: 30),
-          SeatsStatus(),
-          SizedBox(height: 35),
-          DateOfMovie(),
         ],
       ),
     );

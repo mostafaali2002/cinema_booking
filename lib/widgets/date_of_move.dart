@@ -1,6 +1,5 @@
 import 'package:cinema_booking/models/seats_model.dart';
 import 'package:cinema_booking/utils/app_style.dart';
-import 'package:cinema_booking/widgets/reserved_tickets.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -20,7 +19,6 @@ class _DateOfMovieState extends State<DateOfMovie> {
     ).add(Duration(days: index));
   });
   DateTime selectedTime = DateTime.now();
-  List<String> selectedSeats = [];
   @override
   void initState() {
     super.initState();
@@ -177,8 +175,6 @@ class _DateOfMovieState extends State<DateOfMovie> {
                 ],
               ),
             ),
-            const SizedBox(height: 30),
-            const ReservedTickets(),
           ],
         ),
       ),

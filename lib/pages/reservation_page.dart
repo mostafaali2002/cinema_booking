@@ -2,9 +2,14 @@ import 'package:cinema_booking/utils/app_style.dart';
 import 'package:cinema_booking/widgets/reservation_body.dart';
 import 'package:flutter/material.dart';
 
-class ReservationPage extends StatelessWidget {
+class ReservationPage extends StatefulWidget {
   const ReservationPage({super.key});
 
+  @override
+  State<ReservationPage> createState() => _ReservationPageState();
+}
+
+class _ReservationPageState extends State<ReservationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
